@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Online Fund Transfer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          
+            <form class="d-flex ml-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo2.png" alt="CipherFault Logo">
+        </div>
+        <a href="mainpage.html">Home</a>
+        <a href="transfer.html">Transfer Money</a>
+        <a href="balance.html">Account Balance</a>
+        <a href="payees.html">Manage Payees</a>
+        <a href="history.html">Transaction History</a>
+        <a href="settings.html">Settings</a>
+        <!-- Add the "About Us" link here -->
+        <a href="about.html" style="position: absolute; bottom: 40px; left: 10px;">About Us</a>
+    </div>
+
+
+    <main>
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <div class="transaction-entry">
+                <div class="transaction-details">
+                    <span>Recipient: Sam Doe</span>
+                    <span>Date: January 20, 2024</span>
+                </div>
+                <div>Amount: $500.00</div>
+                <div>Comment: Payment for services</div>
+            </div>
+            <div class="transaction-entry">
+                <div class="transaction-details">
+                    <span>Recipient: Jane Smith</span>
+                    <span>Date: January 19, 2024</span>
+                </div>
+                <div>Amount: $200.00</div>
+                <div>Comment: Monthly rent</div>
+            </div>
+            <!-- Add more transaction entries as needed -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CipherVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

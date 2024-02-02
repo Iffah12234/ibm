@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CipherFault Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="l.css"> <!-- Link to the external CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          
+            <form class="d-flex ml-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo2.png" alt="CipherFault Logo">
+        </div>
+        <a href="mainpage.html">Home</a>
+        <a href="transfer.html">Transfer Money</a>
+        <a href="balance.html">Account Balance</a>
+        <a href="payees.html">Manage Payees</a>
+        <a href="history.html">Transaction History</a>
+        <a href="settings.html">Settings</a>
+        <!-- Add the "About Us" link here -->
+        <a href="about.html" style="position: absolute; bottom: 40px; left: 10px;">About Us</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="user-info">
+            <p>User: John Doe</p>
+            <p>Account Number: 123456789</p>
+        </div>
+
+        <div class="account-summary">
+            <h2>Account Summary</h2>
+            <p>Current Balance: $1,500.00</p>
+        </div>
+    </div>
+    
+        <div id="transactionChartContainer">
+            <canvas id="transactionChart"></canvas>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CipherVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add this script at the end of your body section
+        var ctx = document.getElementById('transactionChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Monthly Transactions',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: 'rgba(219, 52, 85, 0.8)', // Adjust the color
+                    borderColor: 'rgba(219, 52, 85, 1)', // Adjust the border color
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    },
+                    x: {
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.8)' // Set the label color to white
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgba(255, 255, 255, 0.8)' // Set the legend label color to white
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

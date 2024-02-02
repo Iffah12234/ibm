@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Payees - Online Fund Transfer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="l.css">
+   </head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <form class="d-flex ml-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo2.png" alt="CipherFault Logo">
+        </div>
+        <a href="mainpage.html">Home</a>
+        <a href="transfer.html">Transfer Money</a>
+        <a href="balance.html">Account Balance</a>
+        <a href="payees.html">Manage Payees</a>
+        <a href="history.html">Transaction History</a>
+        <a href="settings.html">Settings</a>
+        <!-- Add the "About Us" link here -->
+        <a href="about.html" style="position: absolute; bottom: 40px; left: 10px;">About Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="payees-list">
+            <h2>Manage Payees</h2>
+            <div class="payee-entry">
+                <div class="payee-details">
+                    <span>Payee: John Doe</span>
+                    <button class="edit-button">edit</button>
+                </div>
+                <div>Account Number: 123456789</div>
+            </div>
+            <div class="payee-entry">
+                <div class="payee-details">
+                    <span>Payee: Jane Smith</span>
+                    <button class="edit-button">edit</button>
+                </div>
+                <div>Account Number: 987654321</div>
+            </div>
+            <!-- Add more payee entries as needed -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CipherVault. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
